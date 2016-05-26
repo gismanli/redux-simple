@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>redux简单应用</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            text-align: center;
+            margin: 50px;
+        }
+        .tools {
+            text-align: center;
+            margin: 20px;
+            height: 80px;
+        }
+        button {
+            width: 40px;
+            height: 30px;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        input {
+            height: 30px;
+            width: 300px;
+        }
+        #content {
+            margin: 50px;
+        }
+        #content li {
+            height: 38px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            list-style: none;
+            padding-left: 20px;
+            position: relative;
+        }
+        #content .delete {
+            float: right;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Todo</h1>
+    </div>
+    <div class="tools">
+        <input type="text" id="value" onkeypress="addTodo(event)">
+        <button onclick="addTodo()">增加</button>
+    </div>
+    <ul id="content"></ul>
+</body>
+<script src="http://cdn.bootcss.com/redux/3.5.2/redux.js"></script>
+<script src="main.js"></script>
+</html>
